@@ -8,7 +8,7 @@ from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import KFold
 from feature_engineering import compute_defensive_stats, initialize_elo_scores, compute_home_away_diff
-
+import logging
 
 def load_all_league_data(base_path, leagues, seasons):
     """加载所有联赛数据并进行预处理，同时计算主客场差异"""
@@ -19,11 +19,11 @@ def load_all_league_data(base_path, leagues, seasons):
     # 第一遍：加载数据并准备计算
     for country_name, league_name in leagues:
         for season in seasons:
-            print(f"加载数据: {country_name} - {league_name} - {season}")
+            logging.info(f"加载数据: {country_name} - {league_name} - {season}")
             team_file = os.path.join(base_path, f"{country_name}-{league_name}-teams-{season}-stats.csv")
             match_file = os.path.join(base_path, f"{country_name}-{league_name}-matches-{season}-stats.csv")
             if not os.path.exists(team_file) or not os.path.exists(match_file):
-                print(f"警告: {country_name} - {league_name} - {season} 文件缺失")
+                logging.warning(f"{country_name} - {league_name} - {season} 文件缺失")
                 continue
 
             team_df = pd.read_csv(team_file)

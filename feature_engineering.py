@@ -3,6 +3,7 @@
 
 import numpy as np
 import pandas as pd
+import logging
 
 # ====================== 计算防守统计数据 ======================
 def compute_defensive_stats(match_df, team_positions_df):
@@ -19,7 +20,7 @@ def compute_defensive_stats(match_df, team_positions_df):
     for idx, row in match_df.iterrows():
         home_team, away_team = row['home_team_name'], row['away_team_name']
         if home_team not in team_stats or away_team not in team_stats:
-            print(f"警告: 主队 {home_team} 或客队 {away_team} 未找到，跳过比赛 {idx}")
+            logging.warning(f"主队 {home_team} 或客队 {away_team} 未找到，跳过比赛 {idx}")
             continue
         if row['Pre-Match PPG (Away)'] > 0:
             team_stats[home_team]['ratio1_list'].append(
@@ -44,7 +45,7 @@ def compute_defensive_stats(match_df, team_positions_df):
     for idx, row in match_df.iterrows():
         away_team = row['away_team_name']
         if away_team not in team_stats:
-            print(f"警告: 客队 {away_team} 未找到，跳过比赛 {idx}")
+            logging.warning(f"客队 {away_team} 未找到，跳过比赛 {idx}")
             continue
         team_stats[away_team]['total_goals_conceded'] += row['home_team_goal_count']
         team_stats[away_team]['num_matches'] += 1
@@ -68,33 +69,60 @@ def compute_defensive_stats(match_df, team_positions_df):
 
     return pd.DataFrame(data)
 
-# ====================== ELO评分算法实现 ======================
-def initialize_elo_scores(team_positions_df):
-    """初始化球队ELO分数"""
-    teams = team_positions_df['team_name'].unique().tolist()
-    team_elo = {team: 1500 for team in teams}
-    for team in teams:
-        team_data = team_positions_df[team_positions_df['team_name'] == team]
-        rank = team_data['points_per_game'].rank().iloc[0]
-        team_elo[team] += (20 * (len(teams) - rank))
-    return team_elo
+# ====================== xG-ELO评分算法实现 ======================
+def initialize_elo_xg(teams):
+    """
+    为每支球队初始化独立的进攻ELO和防守ELO。
+    
+    Args:
+        teams (list): 包含所有唯一队名的列表。
+        
+    Returns:
+        tuple: (elo_off, elo_def) 两个字典，分别存储进攻和防守ELO。
+    """
+    base_elo = 1500
+    elo_off = {team: base_elo for team in teams}
+    elo_def = {team: base_elo for team in teams}
+    return elo_off, elo_def
 
-def update_elo_scores(elo_scores, home_team, away_team, home_score, away_score, K=30):
-    """更新ELO分数"""
-    home_elo, away_elo = elo_scores[home_team], elo_scores[away_team]
-    expected_home = 1 / (1 + 10 ** ((away_elo - home_elo) / 400))
-    expected_away = 1 / (1 + 10 ** ((home_elo - away_elo) / 400))
 
-    if home_score > away_score:
-        elo_scores[home_team] += K * (1 - expected_home)
-        elo_scores[away_team] += K * (0 - expected_away)
-    elif home_score < away_score:
-        elo_scores[home_team] += K * (0 - expected_home)
-        elo_scores[away_team] += K * (1 - expected_away)
-    else:
-        elo_scores[home_team] += K * (0.5 - expected_home)
-        elo_scores[away_team] += K * (0.5 - expected_away)
-    return elo_scores
+def update_elo_xg(elo_off, elo_def, home_team, away_team, home_xg, away_xg, K=20, avg_xg=1.5):
+    """
+    根据单场比赛的xG数据，更新涉及双方的进攻和防守ELO。
+
+    Args:
+        elo_off (dict): 当前所有球队的进攻ELO。
+        elo_def (dict): 当前所有球队的防守ELO。
+        home_team (str): 主队名称。
+        away_team (str): 客队名称。
+        home_xg (float): 主队的预期进球。
+        away_xg (float): 客队的预期进球。
+        K (int): ELO更新的K因子，控制变化幅度。
+        avg_xg (float): 数据集中平均单队xG，用于S曲线中心点。
+
+    Returns:
+        tuple: (elo_off, elo_def) 更新后的两个ELO字典。
+    """
+    # 1. 主队进攻 vs 客队防守
+    E_home_off = 1 / (1 + 10**((elo_def[away_team] - elo_off[home_team]) / 400))
+    S_home_off = 1 / (1 + np.exp(-(home_xg - avg_xg)))
+    
+    # 更新主队进攻ELO
+    elo_off[home_team] += K * (S_home_off - E_home_off)
+    # 更新客队防守ELO (注意：客队防守“失利”等同于主队进攻“胜利”)
+    elo_def[away_team] += K * ((1 - S_home_off) - (1 - E_home_off))
+
+    # 2. 客队进攻 vs 主队防守
+    E_away_off = 1 / (1 + 10**((elo_def[home_team] - elo_off[away_team]) / 400))
+    S_away_off = 1 / (1 + np.exp(-(away_xg - avg_xg)))
+
+    # 更新客队进攻ELO
+    elo_off[away_team] += K * (S_away_off - E_away_off)
+    # 更新主队防守ELO
+    elo_def[home_team] += K * ((1 - S_away_off) - (1 - E_away_off))
+
+    return elo_off, elo_def
+
 
 # ====================== 计算主客场表现差异比值 ======================
 def compute_home_away_diff(match_df, team_positions_df, elo_scores):
