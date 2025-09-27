@@ -1,0 +1,395 @@
+1860 München
+ADO Den Haag
+AGF
+AS Eupen
+AVS
+AZ
+AaB
+Aalen
+Aarau
+Aberdeen
+Academico Viseu
+Admira
+Ajaccio
+Ajax
+Almere City
+Almería
+Angers SCO
+Annecy
+Arles-Avignon
+Arminia Bielefeld
+Arsenal
+Ascoli
+Aston Villa
+Atalanta
+Athletic Club II
+Atlético CP
+Atlético Madrid
+Augsburg
+Austria Klagenfurt
+Austria Lustenau
+Austria Wien
+Auxerre
+Avellino
+Barcelona II
+Bari 1908
+Barnsley
+Basel
+Bastia
+Bayer Leverkusen
+Bayern München
+Beerschot-Wilrijk
+Belenenses
+Benevento
+Benfica
+Benfica II
+Birmingham City
+Blackburn Rovers
+Blackpool
+Blau-Weiß Linz
+Bochum
+Bologna
+Bolton Wanderers
+Bordeaux
+Borussia Dortmund
+Borussia M'gladbach
+Boulogne
+Bourg-en-Bresse
+Brentford
+Brescia
+Brest
+Brighton & Hove Albion
+Bristol City
+Brøndby
+Burnley
+Burton Albion
+Béziers
+CA Bastia
+CD Nacional
+CD Numancia
+CF União
+CS Marítimo
+Caen
+Cagliari
+Calcio Padova
+Cambuur
+Cardiff City
+Carpi
+Carrarese
+Casa Pia
+Catania
+Catanzaro
+Celta de Vigo
+Celtic
+Cercle Brugge
+Cesena
+Ceuta
+Chambly
+Charlton Athletic
+Chelsea
+Chievo
+Châteauroux
+Cittadella
+Clermont
+Club Brugge
+Como
+Concarneau
+Cosenza
+Cova Piedade
+Coventry City
+Cremonese
+Crotone
+Crystal Palace
+Créteil
+Cádiz
+Córdoba
+Darmstadt 98
+De Graafschap
+Deportivo La Coruña
+Derby County
+Dijon
+Doncaster Rovers
+Dordrecht
+Dundee
+Dundee United
+Dunkerque
+Dynamo Dresden
+Eintracht Braunschweig
+Elversberg
+Emmen
+Empoli
+Energie Cottbus
+Erzgebirge Aue
+Esbjerg
+Everton
+Excelsior
+Fafe
+Famalicão
+Farense
+FeralpiSalò
+Feyenoord
+Fiorentina
+Foggia
+Fortuna Düsseldorf
+Freamunde
+Freiburg
+Frosinone
+Fulham
+Gazélec Ajaccio
+Genoa
+Getafe CF
+Gil Vicente
+Gimnàstic de Tarragona
+Grasshopper
+Greuther Fürth
+Groningen
+Grödig
+Guingamp
+Hamilton Academical
+Hannover 96
+Hansa Rostock
+Hartberg
+Hearts
+Heerenveen
+Heidenheim
+Hellas Verona
+Heracles
+Hibernian
+Hobro
+Hoffenheim
+Holstein Kiel
+Horsens
+Huddersfield Town
+Hull City
+Hvidovre
+Ingolstadt
+Inter Milan
+Inverness CT
+Ipswich Town
+Istres
+Jahn Regensburg
+Juve Stabia
+Juventus
+KSC Lokeren
+KV Mechelen
+Kaiserslautern
+Kilmarnock
+Köln
+København
+Latina
+Lausanne Sport
+Laval
+Lazio
+Le Havre
+Le Mans
+Lecce
+Lecco
+Leeds United
+Leganés
+Leicester City
+Leixões
+Lens
+Lille
+Liverpool
+Livingston
+Livorno
+Llagostera-Costa Brava
+Lorca
+Lorient
+Lugano
+Luton Town
+Luzern
+Lyngby
+Magdeburg
+Mainz 05
+Manchester City
+Manchester United
+Mantova
+Martigues
+Marítimo II
+Mattersburg
+Metz
+Middlesbrough
+Midtjylland
+Millwall
+Milton Keynes Dons
+Mirandés
+Modena
+Monaco
+Montpellier
+Monza
+Motherwell
+NEC
+Nancy
+Nantes
+Napoli
+Neuchâtel Xamax
+Newcastle United
+Nice
+Niort
+Nordsjælland
+Norwich City
+Nottingham Forest
+Novara
+Nîmes
+Nürnberg
+OB
+OH Leuven
+Olympique Marseille
+Orléans
+Osnabrück
+Oxford United
+PSG
+PSV
+Paderborn
+Palermo
+Paris
+Parma
+Partick Thistle
+Pau
+Paços de Ferreira
+Perugia
+Pescara
+Peterborough United
+Pisa
+Plymouth Argyle
+Pordenone
+Portimonense
+Porto
+Portsmouth
+Preston North End
+Preußen Münster
+Pro Vercelli
+Queens Park Rangers
+Quevilly Rouen
+RB Leipzig
+RCD Espanyol
+RCD Mallorca
+RWDM
+Racing Santander
+Randers
+Rangers
+Rapid Wien
+Rayo Majadahonda
+Reading
+Real Betis
+Real Madrid
+Real Madrid II
+Real Murcia
+Real SC
+Real Sociedad
+Real Sociedad II
+Real Valladolid
+Recreativo de Huelva
+Red Star
+Reggiana
+Reggina
+Reims
+Rennes
+Rheindorf Altach
+Ried
+Robur Siena
+Roda JC
+Rodez
+Roma
+Ross County
+Rotherham United
+SPAL
+Saint-Étienne
+Salernitana
+Salzburg
+Sampdoria
+Sandhausen
+Santa Clara
+Sassuolo
+Schalke 04
+Servette
+Sevilla II
+Sheffield United
+Sheffield Wednesday
+Silkeborg
+Sint-Truiden
+Sion
+Sochaux
+Southampton
+Spezia
+Sporting CP
+Sporting Charleroi
+Sporting Covilhã
+Sporting Gijón
+St. Gallen
+St. Johnstone
+St. Mirren
+St. Pauli
+St. Pölten
+Stade Lausanne-Ouchy
+Standard Liège
+Stoke City
+Strasbourg
+Sturm Graz
+Stuttgart
+Sunderland
+Swansea City
+SønderjyskE
+Südtirol
+Ternana
+Thonon Evian FC
+Thun
+Torino
+Torreense
+Tottenham Hotspur
+Toulouse
+Tours
+Trapani
+Troyes
+Twente
+UCAM Murcia CF
+US Alessandria
+Udinese
+Ulm
+Union Berlin
+Union Saint-Gilloise
+União de Leiria
+Utrecht
+VVV
+Vaduz
+Valenciennes
+Varese
+Varzim
+Vejle
+Vendsyssel
+Venezia
+Vestsjælland
+Viborg
+Vicenza
+Vilaverdense
+Villarreal
+Villarreal II
+Virtus Entella
+Virtus Lanciano
+Vitesse
+Vitória Guimarães
+Vitória Guimarães II
+Vitória Setúbal
+Volendam
+Wacker Innsbruck
+Watford
+Wattens
+Wehen Wiesbaden
+Werder Bremen
+West Bromwich Albion
+West Ham United
+Wiener Neustadt
+Wigan Athletic
+Winterthur
+Wolfsberger AC
+Wolfsburg
+Wolverhampton Wanderers
+Wrexham
+Wycombe Wanderers
+Würzburger Kickers
+Yeovil Town
+Young Boys
+Yverdon Sport
+Zulte-Waregem
+Zürich

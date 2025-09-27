@@ -1,0 +1,395 @@
+1. FC Heidenheim 1846
+1. FC Kaiserslautern
+1. FC Köln
+1. FC Magdeburg
+1. FC Nürnberg
+1. FC Union Berlin
+1. FSV Mainz 05
+AC Ajaccio
+AC Arles-Avignon
+AC Cesena
+AC Chievo Verona
+AC Horsens
+AC Pisa 1909
+AC Reggiana 1919
+ACD Virtus Entella
+ACF Fiorentina
+AD Fafe
+AFC Ajax
+AS Béziers
+AS Cittadella
+AS Livorno Calcio
+AS Monaco FC
+AS Nancy-Lorraine
+AS Roma
+AS Saint-Étienne
+AS Varese 1910
+ASD Spezia Calcio 2008
+ASD Trapani Calcio
+AVS Futebol
+Aalborg BK
+Aarhus Gymnastikforening
+Aberdeen FC
+Academico de Viseu FC
+Agrupación Deportiva Ceuta FC
+Alkmaar Zaanstreek
+Almere City FC
+Angers Sporting Club de l'Ouest
+Arsenal FC
+Ascoli Picchio FC 1898
+Association Jeunesse Auxerroise
+Aston Villa FC
+Atalanta Bergamasca Calcio
+Atlético Clube de Portugal
+BSC Young Boys
+BV De Graafschap
+BVB 09 Borussia Dortmund
+Barnsley FC
+Bayer 04 Leverkusen
+Benevento Calcio
+Bilbao Athletic
+Birmingham City FC
+Blackburn Rovers FC
+Blackpool FC
+Bologna FC 1909
+Bolton Wanderers FC
+Borussia VfL Mönchengladbach
+Braunschweiger TSV Eintracht 1895
+Brentford FC
+Brescia Calcio
+Brighton & Hove Albion FC
+Bristol City FC
+Brøndby IF
+Burnley FC
+Burton Albion FC
+CD Cova Piedade
+CD Leganés
+CD Mirandés
+CD Nacional Funchal
+CD Numancia de Soria
+CD Santa Clara
+CF Rayo Majadahonda
+CF União da Madeira
+CS Marítimo Funchal
+CS Marítimo Funchal II
+Cagliari Calcio
+Calcio Catania
+Calcio Como
+Calcio Lecco 1912
+Calcio Padova Spa
+Cardiff City FC
+Carpi FC 1909
+Carrarese Calcio
+Casa Pia AC
+Catanzaro Calcio 2011
+Celtic FC
+Cercle Athlétique Bastiais
+Cercle Brugge KSV
+Chamois Niortais FC
+Charlton Athletic FC
+Chelsea FC
+Clermont Foot 63
+Club Atlético de Madrid
+Club Brugge KV
+Club Gimnàstic de Tarragona
+Cosenza Calcio
+Coventry City FC
+Crystal Palace FC
+Cádiz CF
+Córdoba CF
+DSC Arminia Bielefeld
+Delfino Pescara 1936
+Derby County FC
+Dijon FCO
+Doncaster Rovers FC
+Dundee FC
+Dundee United FC
+Düsseldorfer TuS Fortuna 1895
+Empoli FC
+En Avant Guingamp
+Esbjerg fB
+Espérance Sportive Troyes Aube Champagne
+Everton FC
+Evian Thonon Gaillard FC
+FC Aarau
+FC Admira Wacker Mödling
+FC Annecy
+FC Augsburg
+FC Barcelona Atlètic
+FC Bari 1908
+FC Basel 1893
+FC Bayern München
+FC Blau-Weiß Linz
+FC Chambly-Thelle
+FC Crotone
+FC Dordrecht
+FC Emmen
+FC Energie Cottbus
+FC Erzgebirge Aue
+FC Famalicão
+FC Girondins de Bordeaux
+FC Groningen
+FC Hansa Rostock
+FC Ingolstadt 04
+FC Internazionale Milano
+FC Istres Ouest Provence
+FC København
+FC Lausanne Sport
+FC Lorient
+FC Lugano
+FC Luzern
+FC Metz
+FC Midtjylland
+FC Nantes
+FC Nordsjælland
+FC Paços de Ferreira
+FC Porto
+FC Pro Vercelli Calcio
+FC Salzburg
+FC Sankt Gallen 1879
+FC Schalke 04
+FC Sion
+FC Sochaux-Montbéliard
+FC St. Pauli
+FC Stade Lausanne-Ouchy
+FC Südtirol
+FC Thun
+FC Twente
+FC Utrecht
+FC Vaduz
+FC Vestsjælland
+FC Volendam
+FC Wacker Innsbruck
+FC Winterthur
+FC Würzburger Kickers
+FC Zürich
+FC de Martigues
+FK Austria Wien
+FeralpiSalò Srl
+Feyenoord Rotterdam
+Foggia Calcio 1920
+Football Bourg-en-Bresse Péronnas 01
+Frosinone Calcio
+Fulham FC
+Gazélec FCO Ajaccio
+Genoa CFC
+Getafe Club de Fútbol
+Gil Vicente FC
+Grasshopper Club Zürich
+HFC ADO Den Haag
+Hamilton Academical FC
+Hannoverscher Sportverein 1896
+Heart of Midlothian FC
+Hellas Verona FC
+Heracles Almelo
+Hibernian FC
+Hobro IK
+Huddersfield Town FC
+Hull City AFC
+Hvidovre IF
+Inverness Caledonian Thistle FC
+Ipswich Town FC
+Juventus FC
+KAS Eupen
+KFCO Beerschot-Wilrijk
+KSC Lokeren Oost-Vlaanderen
+Kieler SV Holstein 1900
+Kilmarnock FC
+La Berrichonne de Châteauroux
+Le Havre AC
+Le Mans FC
+Leeds United FC
+Leicester City FC
+Leixões SC
+Lille OSC Métropole
+Liverpool FC
+Livingston FC
+Lorca FC
+Luton Town FC
+Lyngby Boldklub
+Manchester City FC
+Manchester United FC
+Mantova FC
+Middlesbrough FC
+Millwall FC
+Milton Keynes Dons FC
+Modena FC
+Montpellier HSC
+Motherwell FC
+Neuchâtel Xamax FCS
+Newcastle United FC
+Nijmegen Eendracht Combinatie
+Norwich City FC
+Nottingham Forest FC
+Novara Calcio
+Nîmes Olympique
+OGC Nice Côte d'Azur
+OS Belenenses SAD
+Odense BK
+Olympique de Marseille
+Oud-Heverlee Leuven
+Oxford United FC
+PSV Eindhoven
+Paris FC
+Paris Saint-Germain FC
+Parma Calcio 1913
+Partick Thistle FC
+Pau FC
+Perugia Calcio
+Peterborough United FC
+Plymouth Argyle FC
+Pordenone Calcio
+Portimonense SC
+Portsmouth FC
+Preston North End FC
+Queens Park Rangers FC
+RC Strasbourg Alsace
+Racing Club de Lens
+Racing White Daring Molenbeek 47
+Randers FC
+Rangers FC
+Rasen Ballsport Leipzig
+Reading FC
+Real Betis Balompié
+Real Club Celta de Vigo
+Real Club Deportivo Mallorca
+Real Club Deportivo de La Coruña
+Real Club Recreativo de Huelva
+Real Madrid CF
+Real Madrid Castilla CF
+Real Murcia CF
+Real Racing Club de Santander
+Real Sociedad de Fútbol
+Real Sociedad de Fútbol II
+Real Sport Clube de Queluz
+Real Sporting de Gijón
+Real Valladolid Club de Fútbol
+Red Star FC 93
+Reial Club Deportiu Espanyol
+Robur Siena Srl
+Rodez Aveyron Football
+Ross County FC
+Rotherham United FC
+Royal Standard de Liège
+Royal Union Saint-Gilloise
+SBV Excelsior
+SBV Vitesse
+SC Austria Lustenau
+SC Bastia
+SC Cambuur Leeuwarden
+SC Covilhã
+SC Farense
+SC Freamunde
+SC Freiburg
+SC Heerenveen
+SC Paderborn 07
+SC Preußen 06 Münster
+SC Rheindorf Altach
+SC União Torreense
+SC Wiener Neustadt
+SG Dynamo Dresden
+SK Austria Klagenfurt
+SK Rapid Wien
+SK Sturm Graz
+SKN Sankt Pölten
+SL Benfica
+SL Benfica II
+SS Juve Stabia
+SS Lazio
+SS Monza 1912
+SS Virtus Lanciano 1924
+SSC Napoli
+SSV Jahn 2000 Regensburg
+SSV Ulm 1846
+SV 07 Elversberg
+SV Darmstadt 1898
+SV Grödig
+SV Mattersburg
+SV Ried
+SV Roda JC
+SV Sandhausen
+SV Wehen Wiesbaden
+SV Werder Bremen
+SV Zulte-Waregem
+Saint Johnstone FC
+Saint Mirren FC
+Servette FC
+Sevilla Atlético
+Sheffield United FC
+Sheffield Wednesday FC
+Silkeborg IF
+Sint-Truidense VV
+Società Polisportiva Ars et Labor 2013
+Southampton FC
+SpVgg Greuther Fürth
+Sporting Clube de Portugal
+Sporting du Pays de Charleroi
+Stade Brestois 29
+Stade Lavallois Mayenne FC
+Stade Malherbe Caen
+Stade Rennais FC
+Stade de Reims
+Stoke City FC
+Sunderland AFC
+Swansea City AFC
+Sønderjysk Elitesport Fodbold
+TSG 1899 Hoffenheim
+TSV 1860 München
+TSV Hartberg
+Ternana Calcio
+Torino FC
+Tottenham Hotspur FC
+Toulouse FC
+Tours FC
+UC Sampdoria
+UD Almería
+UD Leiria
+US Alessandria Calcio 1912
+US Avellino
+US Boulogne-sur-Mer Côte d'Opale
+US Città di Palermo
+US Concarnoise
+US Cremonese
+US Créteil-Lusitanos
+US Latina
+US Lecce
+US Orléans Loiret
+US Quevilly Rouen Metropole
+US Salernitana 1919
+US Sassuolo Calcio
+US du Littoral de Dunkerque
+Udinese Calcio
+Universidad Católica de Murcia CF
+Unió Esportiva Llagostera-Costa Brava
+Urbs Sportiva Reggina 1914
+VVV Venlo
+Valenciennes FC
+Varzim SC
+Vejle Boldklub
+Vendsyssel FF
+Venezia FC
+VfB Stuttgart 1893
+VfL Bochum 1848
+VfL Osnabrück
+VfL Wolfsburg
+VfR Aalen 1921
+Viborg FF
+Vicenza Calcio
+Vilaverdense FC
+Villarreal CF
+Villarreal CF II
+Vitória Guimarães SC
+Vitória SC Guimarães II
+Vitória Setúbal FC
+WSG Swarovski Wattens
+Watford FC
+West Bromwich Albion FC
+West Ham United FC
+Wigan Athletic FC
+Wolfsberger Athletik Club
+Wolverhampton Wanderers FC
+Wrexham FC
+Wycombe Wanderers FC
+YR KV Mechelen
+Yeovil Town FC
+Yverdon Sport FC
