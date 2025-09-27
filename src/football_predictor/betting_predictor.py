@@ -8,7 +8,7 @@
 import pandas as pd
 import numpy as np
 from typing import Dict, List
-from adaptive_betting_system import AdaptiveBettingSystem
+from .models.adaptive_system import AdaptiveBettingSystem
 
 class BettingPredictor:
     """博彩预测器 - 实用接口"""

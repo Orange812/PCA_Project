@@ -7,7 +7,7 @@ import numpy as np
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import KFold
-from feature_engineering import compute_defensive_stats, initialize_elo_scores, compute_home_away_diff
+from ..features.engineering import compute_defensive_stats, initialize_elo_scores, compute_home_away_diff
 import logging
 
 def load_all_league_data(base_path, leagues, seasons):

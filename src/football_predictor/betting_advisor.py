@@ -8,8 +8,8 @@
 import pandas as pd
 import numpy as np
 from typing import Dict, List, Tuple
-from football_betting_system import FootballBettingSystem
-from advanced_goal_prediction import AdvancedGoalPredictor
+from .models.elo_system import FootballBettingSystem
+from .models.goal_predictor import AdvancedGoalPredictor
 
 class BettingAdvisor:
     """足球博彩建议系统"""

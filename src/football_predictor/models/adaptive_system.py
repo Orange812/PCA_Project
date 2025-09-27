@@ -15,8 +15,8 @@ from sklearn.metrics import mean_absolute_error
 import warnings
 warnings.filterwarnings('ignore')
 
-from football_betting_system import FootballBettingSystem
-from advanced_goal_prediction import AdvancedGoalPredictor
+from .elo_system import FootballBettingSystem
+from .goal_predictor import AdvancedGoalPredictor
 
 class AdaptiveWeightModel:
     """自适应权重学习模型"""

@@ -38,13 +38,35 @@ This is a football betting prediction and analysis system based on ELO ratings a
 ## System Architecture
 
 ```
-Football Betting Prediction and Analysis System
-├── football_betting_system.py    # Core ELO rating system
-├── advanced_goal_prediction.py   # Advanced machine learning prediction
-├── corner_prediction_xgboost.py  # Corner prediction model
-├── betting_advisor.py            # Betting advice generator
-├── demo_system.py                # System demonstration script
-└── football_betting.db           # SQLite database
+/ (Project Root)
+├── src/
+│   └── football_predictor/
+│       ├── __init__.py
+│       ├── data/
+│       │   ├── __init__.py
+│       │   └── loader.py             # Data loading and preprocessing
+│       ├── features/
+│       │   ├── __init__.py
+│       │   └── engineering.py        # Feature engineering functions
+│       ├── models/
+│       │   ├── __init__.py
+│       │   ├── elo_system.py         # Core ELO rating system
+│       │   ├── goal_predictor.py     # Advanced ML-based goal prediction
+│       │   ├── corner_predictor.py   # XGBoost corner prediction model
+│       │   └── adaptive_system.py    # Adaptive weighting and betting strategy
+│       ├── utils/
+│       │   ├── __init__.py
+│       │   └── config.py             # Project configuration
+│       └── betting_advisor.py        # Comprehensive betting advice generator
+├── notebooks/                          # Jupyter notebooks for analysis and exploration
+│   ├── Adaboost.ipynb
+│   ├── demo.ipynb
+│   └── ...
+├── data/                               # Raw CSV data (unchanged)
+│   └── ...
+├── main.py                             # Main entry point for the application
+├── requirements.txt                    # Project dependencies
+└── README.md                           # This file
 ```
 
 ## Data Sources
@@ -86,30 +108,20 @@ predicted_goals = sum(goals_i * weight_i) / sum(weight_i)
 
 ## Usage
 
-### Quick Start
+This project now uses a centralized `main.py` script as its entry point.
+
+### 1. Initialize and Train the System
+First, you need to run the initialization process. This will process all the data, train the necessary models, and find the optimal weights.
+
 ```bash
-# Run the full demo
-python demo_system.py
-
-# Run the core system
-python football_betting_system.py
-
-# Run the betting advice system
-python betting_advisor.py
-
-# Run the corner prediction model analysis
-python corner_prediction_xgboost.py
+python main.py init
 ```
 
-### Single Match Prediction
-```python
-from football_betting_system import FootballBettingSystem
+### 2. Make a Prediction
+Once the system is initialized, you can make predictions for a specific match.
 
-system = FootballBettingSystem()
-system.run_full_analysis()
-
-prediction = system.predict_match_goals("Manchester City", "Arsenal")
-print(f"Predicted Score: {prediction['home_goals_predicted']:.1f} - {prediction['away_goals_predicted']:.1f}")
+```bash
+python main.py predict --home "manchester city" --away "arsenal"
 ```
 
 ## Prediction Result Examples
