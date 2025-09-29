@@ -71,20 +71,32 @@ This is a football betting prediction and analysis system based on ELO ratings a
 
 ## Data Sources
 
-The system uses match data from major European leagues:
-- Premier League (England)
-- Bundesliga (Germany)
-- La Liga (Spain)
-- Ligue 1 (France)
-- Serie A (Italy)
-- Eredivisie (Netherlands)
-- Liga NOS (Portugal)
-- Superliga (Denmark)
-- Championship (England)
-- Serie B (Italy)
-- 2. Bundesliga (Germany)
+The system's database is built from a comprehensive set of leagues, including major European and South American competitions. The dynamic data loader automatically discovers and processes all available data. As of the latest update, the following leagues are included:
 
-Timeframe: 2020-2024 seasons
+- **Europe:**
+  - Austria: Bundesliga
+  - Belgium: Pro League
+  - Croatia: Prva HNL
+  - Czech Republic: First League
+  - Denmark: Superliga
+  - England: Premier League, Championship
+  - France: Ligue 1, Ligue 2
+  - Germany: Bundesliga, 2. Bundesliga, Play-offs 1-2
+  - Greece: Super League
+  - Italy: Serie A, Serie B
+  - Netherlands: Eredivisie
+  - Norway: Eliteserien
+  - Poland: Ekstraklasa
+  - Portugal: Liga NOS, Ligapro
+  - Russia: Russian Premier League
+  - Scotland: Premiership
+  - Serbia: Superliga
+  - Spain: La Liga, Segunda Division
+  - Sweden: Allsvenskan
+  - Switzerland: Super League
+  - Turkey: Super Lig
+- **South America:**
+  - Brazil: Serie A
 
 ## Core Algorithms
 
@@ -104,6 +116,41 @@ new_elo = old_elo + K * (actual_result - expected_result)
 ```python
 weight = time_decay_factor * exp(-|opponent_elo_diff|**2 / (2 * sigma**2))
 predicted_goals = sum(goals_i * weight_i) / sum(weight_i)
+```
+
+## Feature Engineering
+
+The model's performance heavily relies on a set of carefully crafted features that capture team form, style, and market sentiment. The corner prediction model, for example, uses the following key features.
+
+### Key Features and Their Meanings
+
+| Feature Name            | Real-world Meaning                                                                 |
+| ----------------------- | ---------------------------------------------------------------------------------- |
+| `home_avg_possession`   | 主队的平均控球率。反映了球队控制比赛节奏和主导进攻的能力。                         |
+| `home_avg_shots`        | 主队的平均射门次数。直接关联到球队创造进球机会的频率。                             |
+| `home_avg_corners`      | 主队的平均角球数。通常表示球队边路进攻的活跃程度和持续向对方施压的能力。           |
+| `home_avg_xg`           | 主队的平均预期进球 (xG)。量化了每次射门的质量，是衡量进攻效率的核心指标。         |
+| `away_avg_possession`   | 客队的平均控球率。                                                                 |
+| `away_avg_shots`        | 客队的平均射门次数。                                                                 |
+| `away_avg_corners`      | 客队的平均角球数。                                                                 |
+| `away_avg_xg`           | 客队的平均预期进球 (xG)。                                                          |
+| `home_win_fair_prob`    | 市场赔率隐含的主胜公平概率。代表了博彩市场对主队获胜可能性的共识。                 |
+| `strength_disparity`    | 实力差距 (主胜公平概率 - 客胜公平概率)。量化了市场认为的两队实力差异。             |
+| `over_25_prob`          | 市场赔率隐含的总进球数超过2.5的概率。反映了市场对比赛进球多少的整体判断。          |
+| `btts_yes_prob`         | 市场赔率隐含的双方球队都进球的概率。                                               |
+
+### Example Feature Correlation Matrix
+
+During development, analyzing the correlation between different features is crucial to avoid multicollinearity and understand feature relationships. The following is a correlation matrix for a set of defensive ratio features explored in an early-stage model. Values close to 1 or -1 indicate a strong correlation.
+
+```
+           ratio1    ratio2    ratio3    ratio4    ratio5    ratio6
+ratio1  1.000000  0.510050  0.034400  0.157528  0.033620  0.706218
+ratio2  0.510050  1.000000  0.020582  0.273658  0.019180  0.696237
+ratio3  0.034400  0.020582  1.000000  0.019620  0.003637  0.037109
+ratio4  0.157528  0.273658  0.019620  1.000000 -0.078062  0.357276
+ratio5  0.033620  0.019180  0.003637 -0.078062  1.000000  0.009745
+ratio6  0.706218  0.696237  0.037109  0.357276  0.009745  1.000000
 ```
 
 ## Usage
