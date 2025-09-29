@@ -124,20 +124,20 @@ The model's performance heavily relies on a set of carefully crafted features th
 
 ### Key Features and Their Meanings
 
-| Feature Name            | Real-world Meaning                                                                 |
-| ----------------------- | ---------------------------------------------------------------------------------- |
-| `home_avg_possession`   | 主队的平均控球率。反映了球队控制比赛节奏和主导进攻的能力。                         |
-| `home_avg_shots`        | 主队的平均射门次数。直接关联到球队创造进球机会的频率。                             |
-| `home_avg_corners`      | 主队的平均角球数。通常表示球队边路进攻的活跃程度和持续向对方施压的能力。           |
-| `home_avg_xg`           | 主队的平均预期进球 (xG)。量化了每次射门的质量，是衡量进攻效率的核心指标。         |
-| `away_avg_possession`   | 客队的平均控球率。                                                                 |
-| `away_avg_shots`        | 客队的平均射门次数。                                                                 |
-| `away_avg_corners`      | 客队的平均角球数。                                                                 |
-| `away_avg_xg`           | 客队的平均预期进球 (xG)。                                                          |
-| `home_win_fair_prob`    | 市场赔率隐含的主胜公平概率。代表了博彩市场对主队获胜可能性的共识。                 |
-| `strength_disparity`    | 实力差距 (主胜公平概率 - 客胜公平概率)。量化了市场认为的两队实力差异。             |
-| `over_25_prob`          | 市场赔率隐含的总进球数超过2.5的概率。反映了市场对比赛进球多少的整体判断。          |
-| `btts_yes_prob`         | 市场赔率隐含的双方球队都进球的概率。                                               |
+| Feature Name            | Real-world Meaning                                                                                                                              |
+| ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| `home_avg_possession`   | The home team's average possession. Reflects the team's ability to control the game's tempo and dominate the attack.                                |
+| `home_avg_shots`        | The home team's average number of shots. Directly correlates to the frequency of creating scoring opportunities.                                |
+| `home_avg_corners`      | The home team's average number of corners. Often indicates the team's activity in wide attacks and its ability to apply continuous pressure.         |
+| `home_avg_xg`           | The home team's average expected goals (xG). Quantifies the quality of each shot and is a core metric for offensive efficiency.                      |
+| `away_avg_possession`   | The away team's average possession.                                                                                                             |
+| `away_avg_shots`        | The away team's average number of shots.                                                                                                        |
+| `away_avg_corners`      | The away team's average number of corners.                                                                                                      |
+| `away_avg_xg`           | The away team's average expected goals (xG).                                                                                                    |
+| `home_win_fair_prob`    | The fair probability of a home win implied by market odds. Represents the betting market's consensus on the home team's likelihood of winning.      |
+| `strength_disparity`    | Strength disparity (fair prob. of home win - fair prob. of away win). Quantifies the market's perceived difference in strength between the two teams. |
+| `over_25_prob`          | The probability of total goals exceeding 2.5, as implied by market odds. Reflects the market's overall judgment on the match's scoring potential. |
+| `btts_yes_prob`         | The probability that both teams will score, as implied by market odds.                                                                          |
 
 ### Example Feature Correlation Matrix
 
