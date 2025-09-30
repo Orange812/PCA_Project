@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+
+{% block title %}Enter Match Data{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="text-center mb-5">
+        <h2>Corner Count Prediction</h2>
+        <p class="lead">Enter the pre-match average data for both teams to predict the number of corners.</p>
+    </div>
+
+    <form action="/predict" method="POST">
+        <div class="row">
+            <!-- Home Team Column -->
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        <h4>Home Team</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label for="home_ppg" class="form-label">Pre-Match PPG</label>
+                            <input type="number" step="0.01" class="form-control" id="home_ppg" name="home_ppg" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="home_avg_shots" class="form-label">Average Shots</label>
+                            <input type="number" step="0.01" class="form-control" id="home_avg_shots" name="home_avg_shots" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="home_avg_shots_on_target" class="form-label">Average Shots on Target</label>
+                            <input type="number" step="0.01" class="form-control" id="home_avg_shots_on_target" name="home_avg_shots_on_target" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="home_xg" class="form-label">Pre-Match xG</label>
+                            <input type="number" step="0.01" class="form-control" id="home_xg" name="home_xg" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="home_avg_possession" class="form-label">Average Possession (%)</label>
+                            <input type="number" step="0.01" class="form-control" id="home_avg_possession" name="home_avg_possession" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="home_corners_for" class="form-label">Average Corners For</label>
+                            <input type="number" step="0.01" class="form-control" id="home_corners_for" name="home_corners_for" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="home_corners_against" class="form-label">Average Corners Against</label>
+                            <input type="number" step="0.01" class="form-control" id="home_corners_against" name="home_corners_against" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Away Team Column -->
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-secondary text-white">
+                        <h4>Away Team</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label for="away_ppg" class="form-label">Pre-Match PPG</label>
+                            <input type="number" step="0.01" class="form-control" id="away_ppg" name="away_ppg" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="away_avg_shots" class="form-label">Average Shots</label>
+                            <input type="number" step="0.01" class="form-control" id="away_avg_shots" name="away_avg_shots" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="away_avg_shots_on_target" class="form-label">Average Shots on Target</label>
+                            <input type="number" step="0.01" class="form-control" id="away_avg_shots_on_target" name="away_avg_shots_on_target" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="away_xg" class="form-label">Pre-Match xG</label>
+                            <input type="number" step="0.01" class="form-control" id="away_xg" name="away_xg" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="away_avg_possession" class="form-label">Average Possession (%)</label>
+                            <input type="number" step="0.01" class="form-control" id="away_avg_possession" name="away_avg_possession" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="away_corners_for" class="form-label">Average Corners For</label>
+                            <input type="number" step="0.01" class="form-control" id="away_corners_for" name="away_corners_for" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="away_corners_against" class="form-label">Average Corners Against</label>
+                            <input type="number" step="0.01" class="form-control" id="away_corners_against" name="away_corners_against" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-4">
+            <button type="submit" class="btn btn-primary btn-lg">Generate Prediction</button>
+        </div>
+    </form>
+</div>
+{% endblock %}

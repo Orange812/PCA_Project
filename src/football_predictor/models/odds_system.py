@@ -9,7 +9,7 @@ import pandas as pd
 import numpy as np
 import sqlite3
 from typing import Dict, List, Tuple, Optional
-from football_betting_system import FootballBettingSystem
+from .elo_system import FootballBettingSystem
 import warnings
 warnings.filterwarnings('ignore')
 

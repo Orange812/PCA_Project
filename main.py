@@ -1,7 +1,13 @@
 # main.py
+import sys
+import os
 import argparse
 import logging
-from src.football_predictor.betting_predictor import BettingPredictor, print_prediction_report
+
+# Add the src directory to the Python path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), 'src')))
+
+from football_predictor.betting_predictor import BettingPredictor, print_prediction_report
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
