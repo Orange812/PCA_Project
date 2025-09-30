@@ -270,8 +270,91 @@ pip install pandas numpy scikit-learn xgboost
 - [ ] Integrate real-time data sources
 - [ ] Optimize machine learning models
 - [ ] Add player injury and transfer information
-- [ ] Develop a web interface
+- [x] Develop a web interface
 - [ ] Support more betting markets
+
+# Corner Prediction Web UI (Feature Branch)
+
+This project now includes a web-based user interface for the Corner Prediction Model, running on a separate feature branch. This allows users to easily get predictions by inputting pre-match statistics for two competing teams without running command-line scripts.
+
+The application is built with Flask and styled with Bootstrap for a clean, modern, and responsive user experience.
+
+## How to Run the Web UI
+
+1.  **Ensure you are on the correct branch**:
+    ```bash
+    git checkout feature/corner-prediction-ui
+    ```
+
+2.  **Install dependencies**:
+    Make sure you have all the required Python packages installed, including the newly added `scipy`.
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3.  **Run the application**:
+    Execute the `web_app.py` script.
+    ```bash
+    python web_app.py
+    ```
+
+4.  **Access in browser**:
+    Open your web browser and navigate to the following address:
+    [http://127.0.0.1:5001/](http://127.0.0.1:5001/)
+
+## Prediction Example
+
+Below is an example prediction for a match between a strong home team and a weaker away team.
+
+### Input Data:
+
+| Feature                 | Home Team | Away Team |
+| ----------------------- | :-------: | :-------: |
+| Pre-Match PPG           |   2.10    |   1.20    |
+| Average Shots           |   15.0    |   8.0     |
+| Average Shots on Target |   6.0     |   3.0     |
+| Pre-Match xG            |   2.20    |   1.10    |
+| Average Possession (%%)  |   60.0    |   40.0    |
+| Average Corners For     |   7.0     |   4.0     |
+| Average Corners Against |   3.0     |   6.0     |
+
+### Prediction Output:
+
+*   **Home Team Expected Corners**: 7.55
+*   **Away Team Expected Corners**: 4.10
+*   **Total Expected Corners**: 11.65
+
+#### Total Corners Probability Distribution
+
+| Total Corners | Probability |
+| :-----------: | :---------- |
+|       7       | 5.61%%       |
+|       8       | 8.14%%       |
+|       9       | 10.45%%      |
+|      10       | 11.97%%      |
+|      **11**     | **12.41%%**  |
+|      12       | 11.74%%      |
+|      13       | 10.19%%      |
+|      14       | 8.15%%       |
+|      15       | 6.02%%       |
+|      16       | 4.13%%       |
+
+*(Probabilities for other totals are calculated but not shown for brevity)*
+
+#### Home/Away Corners Poisson Distribution Matrix (%%)
+
+This matrix shows the probability of each specific corner outcome (Home x Away).
+
+| Away↓ / Home→ | 5      | 6      | 7      | **8**  | 9      | 10     |
+| :------------ | :----- | :----- | :----- | :----- | :----- | :----- |
+| 2             | 1.28%%  | 1.61%%  | 1.73%%  | 1.63%%  | 1.37%%  | 1.04%%  |
+| 3             | 1.76%%  | 2.22%%  | 2.38%%  | 2.24%%  | 1.88%%  | 1.43%%  |
+| **4**         | **1.72%%** | **2.16%%** | **2.32%%** | **2.18%%** | **1.83%%** | **1.39%%** |
+| 5             | 1.41%%  | 1.77%%  | 1.90%%  | 1.79%%  | 1.50%%  | 1.14%%  |
+| 6             | 0.97%%  | 1.22%%  | 1.31%%  | 1.23%%  | 1.03%%  | 0.78%%  |
+
+*(Matrix is truncated for display purposes)*
+
 
 ## Author
 
